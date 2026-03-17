@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Digite seu nome')
+        document.write(`Seu nome tem ${nome.length} letras<br>`)
+        document.write(`Seu nome em maiúsculo é <strong>${nome.toUpperCase()}</strong><br>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}<br>`)
+        var n1 = 1550.50
+        document.write(`${n1.toLocaleString('pt-BR',{style:"currency", currency:'BRL'})}<br>`)
+
+        var num1 = Number.parseFloat(window.prompt('Digite um número'))
+        var num2 = Number.parseFloat(window.prompt('Digite outro número'))
+        soma = num1 + num2
+        document.write(`A soma total de ${num1} + ${num2} é seu salário ${soma.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
