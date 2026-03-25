@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome')
+        var n1 = Number.parseFloat(window.prompt('Digite n1'))
+        var n2 = Number.parseFloat(window.prompt('Digite n2'))
+        soma = n1 + n2
+        sub = n1 - n2
+        mult = n1 * n2
+        div = n1 / n2
+
+        document.write(`Olá ${nome}, seguem as contas de ${n1} e ${n2}:<br>`)
+        document.write(`${n1} + ${n2} = ${soma}<br>`)
+        document.write(`${n1} - ${n2} = ${sub}<br>`)
+        document.write(`${n1} * ${n2} = ${mult}<br>`)
+        document.write(`${n1} / ${n2} = ${div}<br>`)
+
+
+        // document.write(`seu nome tem ${nome.length} letras`)
+        var res = soma > sub && nome.length == 4
+        window.alert(`Será que a soma de ${n1} + ${n2} é maior que a sua subtração, e seu nome tem 4 letras?`)
+        var res_expression = res == false?"A expressão anterior deu falsa!":"A expressão anterior deu verdadeira!"
+        document.write(res+'<br>')
+        document.write(res_expression)
+    </script>
+</body>
+</html>
