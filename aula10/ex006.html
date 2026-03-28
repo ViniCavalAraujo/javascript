@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area {
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px
+        }
+    </style>
+</head>
+<body>
+    <!-- onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()" onmousemove="mover()" por html  -->
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+
+        /* com HTML E JAVASCRIPT
+        function clicar() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrou() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Entrou'
+        }
+
+        function saiu() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+        }
+
+        function mover() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Movendo!'
+        }*/
+
+
+        //somente com js
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrou() {
+            a.innerText = 'Entrou'
+        }
+
+        function saiu() {
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
