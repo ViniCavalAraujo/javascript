@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praticando DOM</title>
+    <style>
+        body {
+            max-width: 450px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Título</h1>
+    <h2>Sub-título</h2>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste officia non facilis laudantium dolores sapiente, odio, quod corporis numquam et nemo! Animi cum quae illo corrupti consequuntur, in impedit ullam!
+    </p>
+
+    <div>
+        <h3>Olá</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quo. Odio officia, porro ad perspiciatis tenetur nostrum ratione numquam incidunt deleniti eius voluptate molestiae! Commodi asperiores esse aliquid ducimus id?
+        </p>
+    </div>
+
+    <script>
+        window.document.write(window.document.charset+'<br><br>')
+
+        var msg = window.document.querySelector('div')
+        msg.style.background = 'black'
+        msg.style.color = 'white'
+        msg.style.fontFamily = 'Arial'
+
+        var titulo = window.document.getElementById('title')
+        titulo.style.textAlign = 'center'
+
+        var paragrafo = window.document.getElementsByTagName('p')[1]
+        paragrafo.style.color = 'red'
+
+        var n1 = 10
+        var n2 = '10'
+
+        var res = n1 === n2?'True':'False'
+        var resother = n1 == n2?'True':'False'
+        document.write('<strong>Operador de igualdade restrita</strong><br>')
+        document.write(n1 + ' é === a "'+n2+ '"? ' +res+'<br>')
+        document.write('<strong>Operador de igualdade</strong><br>')
+        document.write(`${n1} é == a "${n2}"? ${resother}`)
+    </script>
+</body>
+</html>
