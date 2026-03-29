@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador</title>
+</head>
+<body>
+    <h1>Comparador de números</h1>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="comparar" id="comparar">
+
+
+    <script>
+        var comparar = window.document.getElementById('comparar')
+        comparar.addEventListener('click', comp)
+
+        function comp() {
+            var cx1 = window.document.getElementById('num1')
+            var cx2 = window.document.getElementById('num2')
+
+            var n1 = Number(cx1.value)
+            var n2 = Number(cx2.value)
+
+            // var res = n1 >= n2?'É maior':'É menor'
+            if(n1>n2){
+                alert('É maior')
+            }
+            if(n1==n2){
+                alert('É igual')
+            }
+            if(n1<n2) {
+                alert('É menor')
+            }
+            // alert(res)
+        }
+    </script>
+    
+</body>
+</html>

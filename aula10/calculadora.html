@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="num1" id="num1" required>
+    <input type="number" name="num2" id="num2" required>
+    <input type="button" value="Calcular" id="button">
+
+    <p id="resultado"></p>
+    <script>
+        // function calcular() {
+            
+        //     var num1 = window.document.getElementById('num1')
+        //     var num2 = window.document.getElementById('num2')
+        //     var n1 = Number(num1.value)
+        //     var n2 = Number(num2.value)
+        //     var soma = n1 + n2
+        //     var sub = n1 - n2
+        //     var mult = n1 * n2
+        //     var div = n1 / n2
+            
+
+        //     document.write(`A soma de ${n1} e ${n2} é ${soma}<br>`)
+        //     document.write(`A subtração de ${n1} e ${n2} é ${sub}<br>`)
+        //     document.write(`A multiplicação de ${n1} e ${n2} é ${mult}<br>`)
+        //     document.write(`A divisão de ${n1} e ${n2} é ${div}`)
+        
+        // }
+        var botao = window.document.getElementById('button')
+        botao.addEventListener('click', soma)
+        function soma () {
+            var num1 = window.document.getElementById('num1')
+            var num2 = window.document.getElementById('num2')
+            var resultado = document.getElementById('resultado')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var soma = n1 + n2
+            
+            resultado.innerText = soma
+        }
+    
+    </script>
+</body>
+</html>
