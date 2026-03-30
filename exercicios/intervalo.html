@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Intervalo numérico</h1>
+    <input type="number" name="num" id="num">
+    <input type="button" value="validar" id="validar">
+    <p id="res"></p>
+    <script>
+        var bt = window.document.getElementById('validar')
+        var res = window.document.getElementById('res')
+        bt.addEventListener('click', intervalo)
+
+        function intervalo () {
+            var num = window.document.getElementById('num')
+            var numero = Number(num.value)
+
+            if (numero >= 10 && numero <= 20) {
+                res.innerText = 'Dentro'
+            }else {
+                res.innerText = 'Fora'
+            }
+        }
+
+    </script>
+</body>
+</html>

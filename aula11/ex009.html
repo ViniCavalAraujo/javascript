@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Verificação de país</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" id="button">
+    <div id="res"></div>
+
+    <script>
+        var bt = window.document.getElementById('button')
+        bt.addEventListener('click', vrpais)
+
+        function vrpais() {
+            var res = window.document.getElementById('res')
+            var cxpais = window.document.getElementById('txtpais')
+            var pais = (cxpais.value.toLowerCase())
+            if (pais == 'brasil') {
+                res.innerHTML = 'É brasileiro'
+            } else {
+                res.innerHTML = 'É estrangeiro'
+            }
+        }
+
+    </script>
+</body>
+</html>

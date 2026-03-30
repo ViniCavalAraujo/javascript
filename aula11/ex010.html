@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <label for="txtvel">Velocidade</label>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" id="button" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+      
+
+        function calcular() {
+            var txt = window.document.getElementById('txtvel')
+            var res = window.document.getElementById('res')
+            var vel = Number(txt.value)
+
+            if (vel > 70) {
+                res.innerHTML = '<p>Você foi <strong>multado</strong></p>'
+            }else {
+                res.innerHTML += '<p>Pode passar</p>'
+            }
+            res.innerHTML += '<p>Dirija sempre com cuidado</p>'
+        }
+    </script>
+</body>
+</html>

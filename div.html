@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Divisão</h1>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="calcular" id="button">
+    <p id="res"></p>
+
+    <script>
+        var bt = window.document.getElementById('button')
+        var res = window.document.getElementById('res')
+        bt.addEventListener('click', calc)
+
+        function calc() {
+            var cx1 = window.document.getElementById('num1')
+            var cx2 = window.document.getElementById('num2')
+
+            var n1 = Number(cx1.value)
+            var n2 = Number(cx2.value)
+            var divisao = n1 / n2
+
+            if(n1 <= 0 || n2 <= 0) {
+                res.innerText = 'Não pode dividir por menor ou igual a zero'
+                return
+            }
+
+            res.innerText = divisao
+        }
+    </script>
+</body>
+</html>

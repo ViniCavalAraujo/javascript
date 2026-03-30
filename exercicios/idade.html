@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <h1>Verificador de idade</h1>
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="validar" id="verificar">
+    <p id="res"></p>
+
+    <script>
+        var cx = window.document.getElementById('idade')
+        
+        var res = window.document.getElementById('res')
+        var bt = window.document.getElementById('verificar')
+
+        bt.addEventListener('click', idd)
+        
+
+        function idd() {
+            var idade = Number(cx.value)
+
+            if (idade >= 60 ) {
+                res.innerText = 'É idoso'
+            }
+            else if (idade >= 18 && idade <= 59) {
+                res.innerText = 'É maior de idade'
+            }
+            else {
+                res.innerText = 'É menor de idade'
+            }
+        }
+
+    </script>
+</body>
+</html>

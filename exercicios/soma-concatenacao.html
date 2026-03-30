@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Some ou concatene</h1>
+    <input type="number" name="txtnum1" id="txtnum1">
+    <input type="number" name="txtnum2" id="txtnum2">
+    <input type="button" value="Somar" id="somar">
+    <input type="button" value="Concatenar" id="conc">
+    <div id="res"></div>
+
+    <script>
+        var bt_soma = window.document.getElementById('somar')
+        var bt_conc = window.document.getElementById('conc')
+        bt_soma.addEventListener('click', soma)
+        bt_conc.addEventListener('click', conc)
+
+        function soma() {
+            
+            var txt1 = window.document.getElementById('txtnum1')
+            var txt2 = window.document.getElementById('txtnum2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(txt1.value)
+            var n2 = Number(txt2.value)
+            var soma = n1 + n2
+            res.innerHTML = `Soma fica ${soma}`
+        }
+
+        function conc() {
+            var txt1 = window.document.getElementById('txtnum1')
+            var txt2 = window.document.getElementById('txtnum2')
+            var res = window.document.getElementById('res')
+            var n1 = (txt1.value)
+            var n2 = (txt2.value)
+
+            res.innerHTML = `Concatenado fica "${n1}${n2}"`
+        }
+    </script>
+</body>
+</html>
