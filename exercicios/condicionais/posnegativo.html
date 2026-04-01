@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num">Digite um número</label>
+    <input type="number" name="num" id="num">
+    <input type="button" value="validar" id="button">
+    <div id="res"></div>
+
+    <script>
+        var res = window.document.getElementById('res')
+        var bt = window.document.getElementById('button')
+        bt.addEventListener('click', posnegativo)
+
+        function posnegativo() {
+            var txtnum = window.document.getElementById('num')
+            var num = Number(txtnum.value)
+            if (num > 0) {
+                res.innerHTML = `O número ${num} é positivo`
+            }
+            else if (num < 0) {
+                res.innerHTML = `O número ${num} é negativo`
+            }
+            else {
+                res.innerHTML = 'Zero'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <label for="">Digite uma das cores:<br>Vermelho<br>Amarelo<br>Verde</label>
+        <input type="text" name="cor" id="cor">
+        <input type="button" value="validar" id="button">
+        <div id="res"></div>
+    </div>
+    
+
+    <script>
+        var res = window.document.getElementById('res')
+        var bt = window.document.getElementById('button')
+        bt.addEventListener('click', verCor)
+
+        function verCor() {
+            var txtcor = window.document.getElementById('cor')
+            var cor = txtcor.value.toLowerCase()
+
+            switch(cor) {
+                case '':
+                    res.innerHTML = 'Preencha algo'
+                    break
+                case 'vermelho':
+                    res.innerHTML = 'Pare'
+                    break
+                case 'amarelo':
+                    res.innerHTML = 'Atenção'
+                    break
+                case 'verde':
+                    res.innerHTML = 'Siga'
+                    break
+                default: 
+                    res.innerHTML = 'Cor inválida'
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

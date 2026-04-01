@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="txtsenha" id="txtsenha">
+    <input type="button" value="entrar">
+    <div id="res"></div>
+
+    <script>
+        var res = window.document.getElementById('res')
+        var bt = window.document.getElementsByTagName('input')[1]
+        bt.addEventListener('click', validarSenha)
+
+        function validarSenha() {
+            var txtsen = window.document.querySelector('input#txtsenha')
+            var senha = Number(txtsen.value)
+            if(senha == 1234) {
+                res.innerHTML = 'Acesso permitido'
+            } else {
+                res.innerHTML = 'Acesso negado'
+            }
+        }
+    </script>
+</body>
+</html>
