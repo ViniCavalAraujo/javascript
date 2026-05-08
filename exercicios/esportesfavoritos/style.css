@@ -1,0 +1,10 @@
+h1, p {
+    text-align: center;
+}
+
+#cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

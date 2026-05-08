@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportes Favoritos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Esportes Favoritos</h1>
+    <p>
+        Selecione seus esportes favoritos!
+    </p>
+    
+    <section id="cont">
+        <label for="fut">Futebol</label>
+        <input type="checkbox" name="esportes" id="fut">
+
+        <label for="basq">Basquete</label>
+        <input type="checkbox" name="esportes" id="basq">
+
+        <label for="volei">Vôlei</label>
+        <input type="checkbox" name="esportes" id="volei">
+
+        <label for="nat">Natação</label>
+        <input type="checkbox" name="esportes" id="nat">
+
+        <label for="tenis">Tênis</label>
+        <input type="checkbox" name="esportes" id="tenis">
+
+        <label for="golf">Golf</label>
+        <input type="checkbox" name="esportes" id="golf">
+
+        <label for="outro">Outro</label>
+        <input type="checkbox" name="outro" id="outro">
+        <input type="text" name="outrotext" id="outrotext">
+        
+        <input type="button" value="enviar" onclick="esportesFavoritos()">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
