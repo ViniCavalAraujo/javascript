@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+    <section>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" maxlength="60">
+
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" maxlength="20">
+
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="ling" id="js">
+
+        <label for="python">Python</label>
+        <input type="checkbox" name="ling" id="python">
+
+        <label for="java">Java</label>
+        <input type="checkbox" name="ling" id="java">
+
+        <label for="termos">Aceito os termos</label>
+        <input type="checkbox" name="termos" id="termos">
+        
+        <div id="cont-termos">
+            <a href="#" onclick="termos()" id="avisotermos">Leia os termos</a>
+        </div>
+        <input type="button" value="Enviar" onclick="validacao()">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
