@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome">
+
+    <label for="idade">Idade</label>
+    <input type="number" name="idade" id="idade">
+
+
+    <label for="manha">Manhã</label>
+    <input type="checkbox" name="periodo" id="manha">
+    
+    <label for="tarde">Tarde</label>
+    <input type="checkbox" name="periodo" id="tarde">
+
+    <label for="noite">Noite</label>
+    <input type="checkbox" name="periodo" id="noite">
+
+    <label for="horario" onclick="mostrarTexto()">Outro horário</label>
+    <input type="checkbox" name="horario" id="horario" onclick="mostrarTexto()">
+    <input type="text" name="txthorario" id="txthorario" placeholder="Preencha o horário">
+
+    <label for="cfemail">Aceito confirmação por e-mail</label>
+    <input type="checkbox" name="cfemail" id="cfemail">
+
+    <input type="button" value="Enviar" id="bt">
+
+    <script src="script.js"></script>
+</body>
+</html>
