@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome">
+
+    <label for="uma">1 Estrela</label>
+    <input type="radio" name="nota" id="uma" onclick="comentsFeedback()">
+
+    <label for="duas">2 Estrela</label>
+    <input type="radio" name="nota" id="duas" onclick="comentsFeedback()">
+
+    <label for="tres">3 Estrela</label>
+    <input type="radio" name="nota" id="tres" onclick="comentsFeedback()">
+
+    <label for="quatro">4 Estrela</label>
+    <input type="radio" name="nota" id="quatro" onclick="comentsFeedback()">
+
+    <label for="cinco">5 Estrela</label>
+    <input type="radio" name="nota" id="cinco" onclick="comentsFeedback()">
+
+    <textarea name="coment" id="coment" placeholder="Comentário opcional"></textarea>
+
+    <label for="email">Desejo receber resposta por e-mail</label>
+    <input type="checkbox" name="email" id="email" onclick="mostrarEmail()">
+    <input type="text" name="campoemail" id="campoemail" placeholder="Digite seu e-mail">
+
+    <input type="button" value="Enviar" onclick="validacao()">
+
+    <script src="script.js"></script>
+</body>
+</html>
