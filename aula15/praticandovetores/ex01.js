@@ -1,0 +1,3 @@
+let vet = [5,4,8,0]
+
+console.log(vet)
