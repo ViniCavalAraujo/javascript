@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="est">Selecione um estado</label>
+    <select name="est" id="est">
+        <option value="">Selecione</option>
+        <option value="sp">SP</option>
+        <option value="rj">RJ</option>
+        <option value="mg">MG</option>
+    </select>
+
+    <input type="button" value="Enviar" onclick="enviar()">
+    <input type="button" value="Adicionar" onclick="adicionar()">
+    <input type="button" value="Limpar" onclick="limpar()">
+
+    <p id="res"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
