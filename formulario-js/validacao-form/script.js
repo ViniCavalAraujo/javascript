@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) => {
 
 
     //validações dos inputs
-    if (dados.nomeUsuario === '' || dados.emailUsuario === '' || dados.telUsuario === '') {
+    if (dados.nomeUsuario.trim() === '' || dados.emailUsuario.trim() === '' || dados.telUsuario.trim() === '') {
         alert('Preencha todos os campos')
         return
     }
