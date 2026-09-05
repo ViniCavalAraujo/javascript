@@ -1,0 +1,7 @@
+#res-lista {
+    display: none;
+}
+
+#res-lista.ativo {
+    display: block;
+}
