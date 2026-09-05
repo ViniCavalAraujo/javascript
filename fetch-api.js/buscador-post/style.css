@@ -1,0 +1,7 @@
+#res-itens {
+    display: none;
+}
+
+#res-itens.ativo {
+    display: block;
+}
